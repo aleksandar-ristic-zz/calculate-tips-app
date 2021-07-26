@@ -11,16 +11,6 @@
 		/>
 		<title>Frontend Mentor | Tip calculator app</title>
 		<link rel="stylesheet" href="/style.css" />
-
-		<style>
-			.attribution {
-				font-size: 11px;
-				text-align: center;
-			}
-			.attribution a {
-				color: hsl(228, 45%, 44%);
-			}
-		</style>
 	</head>
 	<body>
 		<h1 class="headline">
@@ -30,7 +20,7 @@
 		<div class="container">
 			<div class="input-container">
 				<div class="w-100">
-					<p>Bill <span></span></p>
+					<p>Bill <span class="total-error"></span></p>
 					<div class="input-wrapper">
 						<img src="images/icon-dollar.svg" alt="dollar" />
 						<input class="total-input" placeholder="0" type="number" />
@@ -38,34 +28,34 @@
 				</div>
 
 				<div class="w-100">
-					<p>Select Tip % <span></span></p>
+					<p>Select Tip % <span class="custom-error"></span></p>
 					<div class="grid-container">
 						<label for="5%"
 							>5%
-							<input type="radio" value="5%" name="tip-percent" id="5%" />
+							<input type="radio" value="5" name="tip-percent" id="5%" />
 						</label>
 						<label for="10%"
 							>10%
-							<input type="radio" value="10%" name="tip-percent" id="10%" />
+							<input type="radio" value="10" name="tip-percent" id="10%" />
 						</label>
 						<label for="15%"
 							>15%
-							<input type="radio" value="15%" name="tip-percent" id="15%" />
+							<input type="radio" value="15" name="tip-percent" id="15%" />
 						</label>
 						<label for="25%"
 							>25%
-							<input type="radio" value="25%" name="tip-percent" id="25%" />
+							<input type="radio" value="25" name="tip-percent" id="25%" />
 						</label>
 						<label for="50%"
 							>50%
-							<input type="radio" value="50%" name="tip-percent" id="50%" />
+							<input type="radio" value="50" name="tip-percent" id="50%" />
 						</label>
 						<input class="custom-input" type="number" placeholder="Custom" />
 					</div>
 				</div>
 
 				<div class="w-100">
-					<p>Number of People <span>Can't be zero</span></p>
+					<p>Number of People <span class="people-error"></span></p>
 					<div class="input-wrapper">
 						<img src="/images/icon-person.svg" alt="dollar" />
 						<input class="people-input" placeholder="0" type="number" />
