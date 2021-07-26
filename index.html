@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="/style.css">
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <h1 class="headline">
+    <img src="/images/logo.svg" alt="logo">
+  </h1>
+  
+  <div class="container">
+    <div class="input-container">
+      <div class="w-100">
+        <p>Bill</p>
+        <div class="input-wrapper">
+          <img src="images/icon-dollar.svg" alt="dollar">
+          <input class="total-input" type="text">
+        </div>
+      </div>
+
+      <div class="w-100">
+        <p>Select Tip %</p>
+        <div class="grid-container">
+     <label for="">5%
+          <input type="radio" value="5%" name="">
+        </label>
+        <label for="">10%
+          <input type="radio" value="10%" name="">
+        </label>
+        <label for="">15%
+          <input type="radio" value="15%" name="">
+        </label>
+        <label for="">25%
+          <input type="radio" value="25%" name="">
+        </label>
+        <label for="">50%
+          <input type="radio" value="50%" name="">
+        </label>
+        <input class="custom-no" type="text" placeholder="Custom">
+      </div>
+      </div>
+   
+
+      <div class="w-100">
+        <p>Number of People</p>
+         <div class="input-wrapper">
+           <img src="/images/icon-person.svg" alt="dollar">
+        <input type="text">
+         </div>
+      </div>
+    </div>
+    <div class="output-container">
+      <div class="top">
+        <div class="w-100">
+        <div class="left">
+          <h3>Tip Amount</h3>
+        <span>/ person</span>
+        </div>
+        <h2 class="tip-amount">$4.27</h2>
+      </div>
+      <div class="w-100">
+        <div class="left">
+          <h3>Total</h3>
+        <span>/ person</span>
+        </div>
+        <h2 class="total-amount">$32.79</h2>
+      </div>
+      </div>
+      
+      <button class="reset-btn">reset</button>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/aleksandar-ristic" target="_blank">aleksandar-ristic</a>.
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>
